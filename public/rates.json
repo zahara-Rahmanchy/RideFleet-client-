@@ -1,0 +1,73 @@
+ [
+      {
+        "name": "Student Plan",
+        "vehicles": [
+          {
+            "type": "Cars",
+            "daily": 1500,
+            "weekly": 7000,
+            "monthly": 25000
+          },
+          {
+            "type": "Bikes",
+            "daily": 300,
+            "weekly": 1500,
+            "monthly": 4800
+          },
+          {
+            "type": "Cycles",
+            "daily": 120,
+            "weekly": 600,
+            "monthly": 1800
+          }
+        ]
+      },
+      {
+        "name": "Standard Plan",
+        "vehicles": [
+          {
+            "type": "Cars",
+            "daily": 2400,
+            "weekly": 13000,
+            "monthly": 45000
+          },
+          {
+            "type": "Bikes",
+            "daily": 600,
+            "weekly": 3000,
+            "monthly": 9000
+          },
+          {
+            "type": "Cycles",
+            "daily": 300,
+            "weekly": 1200,
+            "monthly": 3600
+          }
+        ]
+      },
+      {
+        "name": "Premium Plan",
+        "vehicles": [
+          {
+            "type": "Cars",
+            "daily": 3600,
+            "weekly": 20000,
+            "monthly": 65000
+          },
+          {
+            "type": "Bikes",
+            "daily": 900,
+            "weekly": 4500,
+            "monthly": 12000
+          },
+          {
+            "type": "Cycles",
+            "daily": 420,
+            "weekly": 1800,
+            "monthly": 5400
+          }
+        ]
+      }
+    ]
+  
+  

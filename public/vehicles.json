@@ -1,0 +1,67 @@
+[
+   
+      {
+        "type": "car",
+        "name": "Sedan",
+        "brand": "Toyota",
+        "image": "/car.png",
+        "price": "BDT 5000"
+      },
+      {
+        "type": "car",
+        "name": "Hatchback",
+        "brand": "Honda",
+        "image": "/jeep.png"
+      },
+      {
+        "type": "bike",
+        "name": "Sport Bike",
+        "brand": "Kawasaki",
+        "image": "motorcyle.png"
+      },
+      {
+        "type": "bike",
+        "name": "Cruiser",
+        "brand": "Harley-Davidson",
+        "image": "/bike.jpg"
+      },
+      {
+        "type": "bike",
+        "name": "Mountain Bike",
+        "brand": "Trek",
+        "image": "/red-bicycle.jpg"
+      },
+      {
+        "type": "bike",
+        "name": "City Bike",
+        "brand": "Giant",
+        "image": "city_bike.jpg"
+      },
+      {
+        "type": "truck",
+        "name": "Pickup Truck",
+        "brand": "Ford",
+        "image": "pickup_truck.jpg"
+      },
+      {
+        "type": "truck",
+        "name": "Dump Truck",
+        "brand": "Volvo",
+        "image": "dump_truck.jpg"
+      },
+      {
+        "type": "jeep",
+        "name": "Off-Road Jeep",
+        "brand": "Jeep",
+        "image": "jeep.jpg"
+      },
+      
+      {
+        "type": "other",
+        "name": "RV",
+        "brand": "Winnebago",
+        "image": "rv.jpg"
+      }
+    
+    ]
+  
