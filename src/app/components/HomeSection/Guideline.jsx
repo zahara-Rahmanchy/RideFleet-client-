@@ -42,7 +42,7 @@ const Guideline = () => {
                 </svg>
             </span>
             <h3 className="mb-1 text-xl font-semibold text-yellow-200 dark:text-white"> Choose Your Date and Time</h3>
-           <p className="text-base font-normal text-white dark:text-gray-400">Choose the date and time you want to start your journey. Our booking system allows you to specify when you need the vehicle, ensuring it's ready when you are.</p>
+           <p className="text-base font-normal text-white dark:text-gray-400">Choose the date and time you want to start your journey. Our booking system allows you to specify when you need the vehicle, ensuring it&apos;s ready when you are.</p>
         </li>
         <li className="ml-6 mb-10">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -60,7 +60,7 @@ const Guideline = () => {
                 </svg>
             </span>
             <h3 className="mb-1 text-lg font-semibold text-yellow-200 dark:text-white"> Review and Confirm</h3>
-           <p className="text-base font-normal text-white dark:text-gray-400">Double-check your booking details to ensure everything is accurate. Review your vehicle choice, rental period, and any additional services you've selected. Once you're satisfied, confirm your reservation</p>
+           <p className="text-base font-normal text-white dark:text-gray-400">Double-check your booking details to ensure everything is accurate. Review your vehicle choice, rental period, and any additional services you&apos;ve selected. Once you&apos;re satisfied, confirm your reservation</p>
         </li>
         <li className="ml-6 mb-10">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">

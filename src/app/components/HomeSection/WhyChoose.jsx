@@ -9,7 +9,7 @@ const WhyChoose = () => {
         <div className="shadow-lg bg-gray-100 flex flex-col justify-center p-8">
           <h4 className="text-xl font-bold text-center mb-5 text-sky-900">One-Stop Destination</h4>
           <p className="text-md text-gray-900 text-center">
-            Whether it's a city ride, road trip, or heavy-duty haul,
+            Whether it&apos;s a city ride, road trip, or heavy-duty haul,
             our diverse range of vehicles has you sorted. From bikes to trucks,
             we offer affordable options for any occasion.
           </p>
