@@ -61,7 +61,7 @@ const HomeVehicles = () => {
       {vehicles.map((vehicle, index) => (
       <SwiperSlide>
          
-<div  className="max-w-md  bg-gray-100 h-[400px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 "
+<div key={index} className="max-w-md  bg-gray-100 h-[400px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 "
 style={{backgroundImage: `url(${"/wave-haikei.svg"}`}}>
 
      <h5 className=" float-right mb-2 text-2xl font-bold tracking-tight text-yellow-200 p-3 dark:text-white">{vehicle.name}</h5>
