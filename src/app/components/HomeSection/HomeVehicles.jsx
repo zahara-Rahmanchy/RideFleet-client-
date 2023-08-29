@@ -7,6 +7,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "./banner.css"
 import 'swiper/css';
+import Image from 'next/image';
+import WaveHaikei from './WaveHaikei';
 const HomeVehicles = () => {
     const [vehicles, setVehicles] = useState([]);
 
@@ -59,23 +61,21 @@ const HomeVehicles = () => {
       {vehicles.map((vehicle, index) => (
       <SwiperSlide>
          
-<div key={index} className="max-w-md  bg-gray-100 min-h-[400px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 "
-style={{backgroundImage: `url(${"/wave-haikei.svg"})`}}>
+<div  className="max-w-md  bg-gray-100 h-[400px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 "
+style={{backgroundImage: `url(${"/wave-haikei.svg"}`}}>
 
      <h5 className=" float-right mb-2 text-2xl font-bold tracking-tight text-yellow-200 p-3 dark:text-white">{vehicle.name}</h5>
         
-    <a href="#">
-        <img className="rounded-t-lg " src={vehicle.image} alt="" />
-    </a>
-    <div className="p-5  flex flex-col justify-end align-bottom h-full">
-        {/* <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-yellow-300 dark:text-white">{vehicle.name}</h5>
-        </a> */}
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 capitalize">{vehicle.price}/<subscript className="text-sm font-light">Day</subscript></p>
-        <a href="#" className="inline-flex w-[30%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  
+        <Image className="rounded-t-lg " src={vehicle.image} width={275} height={250} alt="" />
+    
+    <div className=" flex flex-col  h-full mx-3">
+        
+        <p className="z-10 mb-3  font-normal text-gray-700 dark:text-gray-400 capitalize">{vehicle.price}/<subscript className="text-sm font-light">Day</subscript></p>
+        <a href="#" className="z-10 inline-flex w-[30%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
              Hire
              <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
         </a>
     </div>

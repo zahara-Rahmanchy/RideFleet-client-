@@ -17,7 +17,7 @@
         "type": "bike",
         "name": "Sport Bike",
         "brand": "Kawasaki",
-        "image": "motorcyle.png"
+        "image": "/motorcyle.png"
       },
       {
         "type": "bike",
@@ -35,32 +35,32 @@
         "type": "bike",
         "name": "City Bike",
         "brand": "Giant",
-        "image": "city_bike.jpg"
+        "image": "/city_bike.jpg"
       },
       {
         "type": "truck",
         "name": "Pickup Truck",
         "brand": "Ford",
-        "image": "pickup_truck.jpg"
+        "image": "/pickup_truck.jpg"
       },
       {
         "type": "truck",
         "name": "Dump Truck",
         "brand": "Volvo",
-        "image": "dump_truck.jpg"
+        "image": "/dump_truck.jpg"
       },
       {
         "type": "jeep",
         "name": "Off-Road Jeep",
         "brand": "Jeep",
-        "image": "jeep.jpg"
+        "image": "/jeep.jpg"
       },
       
       {
         "type": "other",
         "name": "RV",
         "brand": "Winnebago",
-        "image": "rv.jpg"
+        "image": "/rv.jpg"
       }
     
     ]

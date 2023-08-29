@@ -24,8 +24,8 @@ const Rates = () => {
             <h2 className='text-sky-600 font-semibold text-2xl text-center mb-4 mt-2'>{plan.name}</h2>
           {plan.vehicles.map((vehicle) => (
             
-            <div className='bg-gray-800 bg-opacity-75 w-full'style={{backgroundImage: `url(${"/background.jpg"})`}}>
-            <div key={vehicle.type} className='flex flex-col justify-center items-center bg-sky-950 p-3 bg-opacity-90'>
+            <div key={vehicle.type} className='bg-gray-800 bg-opacity-75 w-full'style={{backgroundImage: `url(${"/background.jpg"})`}}>
+            <div  className='flex flex-col justify-center items-center bg-sky-950 p-3 bg-opacity-90'>
              
               <h4 className='text-center font-medium text-xl my-3 text-yellow-200'>{vehicle.type}</h4>
               <ul className=' list-disc '>

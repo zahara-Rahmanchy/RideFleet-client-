@@ -1,4 +1,5 @@
 // "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 // import favicon from "../../app/favicon.png";
@@ -9,9 +10,9 @@ const Navbar = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <a href="https://flowbite.com" className="flex items-center">
-            <span className="flex flex-row justify-end items-end self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="flex text-gray-600 flex-row justify-end items-end self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Ride
-              <img src="./favicon.png" className="h-6 w-4/5" alt="car" />
+              <Image src="/favicon.png" width={24} height={24} alt="logo" />
               Fleet
             </span>
           </a>
