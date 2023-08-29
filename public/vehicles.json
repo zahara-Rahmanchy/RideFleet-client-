@@ -11,57 +11,35 @@
         "type": "car",
         "name": "Hatchback",
         "brand": "Honda",
-        "image": "/jeep.png"
+        "image": "/blue-hatchback.png",
+        "price": "BDT 5000"
       },
       {
         "type": "bike",
         "name": "Sport Bike",
         "brand": "Kawasaki",
-        "image": "/motorcyle.png"
+        "image": "/black-bike.png",
+        "price": "BDT 1000"
       },
       {
-        "type": "bike",
-        "name": "Cruiser",
+        "type": "cycle",
+        "name": "Bicycle",
         "brand": "Harley-Davidson",
-        "image": "/bike.jpg"
+        "image": "/red-bicycle.png",
+        "price": "BDT 500"
       },
-      {
-        "type": "bike",
-        "name": "Mountain Bike",
-        "brand": "Trek",
-        "image": "/red-bicycle.jpg"
-      },
-      {
-        "type": "bike",
-        "name": "City Bike",
-        "brand": "Giant",
-        "image": "/city_bike.jpg"
-      },
-      {
-        "type": "truck",
-        "name": "Pickup Truck",
-        "brand": "Ford",
-        "image": "/pickup_truck.jpg"
-      },
-      {
-        "type": "truck",
-        "name": "Dump Truck",
-        "brand": "Volvo",
-        "image": "/dump_truck.jpg"
-      },
+     
       {
         "type": "jeep",
-        "name": "Off-Road Jeep",
+        "name": "Jeep",
         "brand": "Jeep",
-        "image": "/jeep.jpg"
-      },
-      
-      {
-        "type": "other",
-        "name": "RV",
-        "brand": "Winnebago",
-        "image": "/rv.jpg"
+        "image": "/jeep.png",
+        "price": "BDT 6000"
       }
+     
+     
+      
+      
     
     ]
   

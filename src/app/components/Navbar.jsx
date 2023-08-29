@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="bg-[#212126] dark:bg-gray-700">
+      <nav className=" bg-gray-800 dark:bg-gray-700">
         <div className="max-w-screen-xl px-4 py-3 mx-auto">
           <div className="flex items-center">
             <ul className="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">

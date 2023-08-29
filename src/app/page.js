@@ -6,6 +6,7 @@ import Booking from "./components/HomeSection/Booking";
 import WhyChoose from "./components/HomeSection/WhyChoose";
 import Rates from "./components/HomeSection/Rates";
 import Discount from "./components/HomeSection/Discount";
+import TotalProducts from "./components/HomeSection/TotalProducts";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
        <Banner/>
        <Guideline/>
        <HomeVehicles/>
+       <TotalProducts/>
        <WhyChoose/>
        <Discount/>
        <Rates/>
