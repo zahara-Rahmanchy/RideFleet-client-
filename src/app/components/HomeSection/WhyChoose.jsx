@@ -25,14 +25,14 @@ const WhyChoose = () => {
         <div className="shadow-lg bg-gray-100 flex flex-col justify-center p-8">
           <h4 className="text-xl font-bold text-center mb-5 text-sky-900">Ease of Availability</h4>
           <p className="text-md text-gray-900 text-center">
-            Need a vehicle on short notice? We've got you covered. With a seamless booking process, our vehicles are readily available whenever and wherever you need them.
+            Need a vehicle on short notice? We&apos;ve got you covered. With a seamless booking process, our vehicles are readily available whenever and wherever you need them.
           </p>
         </div>
         <div className="shadow-lg bg-gray-100 flex flex-col justify-center p-8">
           <h4 className="text-xl font-bold text-center mb-5 text-sky-900">Safety and Satisfaction Assured</h4>
           <p className="text-md text-gray-900 text-center">
             Your safety and satisfaction are our top priorities. Every vehicle in our fleet undergoes regular maintenance
-            and thorough inspections to ensure it's road-ready and reliable.
+            and thorough inspections to ensure it&apos;s road-ready and reliable.
           </p>
         </div>
       </div>

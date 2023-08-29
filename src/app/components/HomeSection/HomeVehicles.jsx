@@ -67,7 +67,7 @@ style={{backgroundImage: `url(${"/wave-haikei.svg"}`}}>
      <h5 className=" float-right mb-2 text-2xl font-bold tracking-tight text-yellow-200 p-3 dark:text-white">{vehicle.name}</h5>
         
   
-        <Image className="rounded-t-lg " src={vehicle.image} width={275} height={250} alt="" />
+        <Image className="rounded-t-lg " src={vehicle.image} width={275} height={250} alt={vehicle.name}/>
     
     <div className=" flex flex-col  h-full mx-3">
         
