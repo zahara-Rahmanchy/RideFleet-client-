@@ -25,8 +25,8 @@ const HomeVehicles = () => {
         });
     }, [vehicles]);
   return (
-    <div className='grid grid-cols-6 max-w-8xl mx-auto place-items-center  mb-10  h-full'>
-    <div className='md:col-span-2 col-span-6 md:py-20 shadow-sm'><h1 className='text-6xl text-wrap font-bold text-gray-800 p-10'>Choose Your Journey!</h1> <button className='mx-12 btn btn-md bg-blue-800 rounded-md p-3 text-white'>See More</button></div>
+    <div className="grid grid-cols-6 max-w-8xl mx-auto place-items-center  mb-10  h-full">
+    <div className="md:col-span-2 col-span-6 md:py-20 shadow-sm"><h1 className="text-6xl text-wrap font-bold text-gray-800 p-10">Choose Your Journey!</h1> <button className="mx-12 btn btn-md bg-blue-800 rounded-md p-3 text-white">See More</button></div>
     
     <div className=
    "md:col-span-4  col-span-6 md:py-20 py-5 w-full min-h-[400px] place-items-center px-6">
