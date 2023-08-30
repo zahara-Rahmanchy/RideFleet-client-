@@ -22,7 +22,7 @@ const TotalProducts = () => {
         <div className="bg-sky-950 bg-opacity-90 w-full flex flex-col justify-center items-center h-full py-10" data-aos="slide-up">
         <p className="text-white text-4xl" data-aos="slide-right"><CountUpAnimated end={500} id="otherCounter" /><span className="text-yellow-200">+</span></p>
         <hr className=" border-white border-2 w-4 mt-3 border-dashed"/>
-          <p className="text-blue-400 mt-3 text-lg"data-aos="slide-right">Others Types of Vehicles</p>
+          <p className="text-blue-400 mt-3 text-lg text-wrap text-center"data-aos="slide-right">Others Types of Vehicles</p>
         </div>
         <div className="bg-sky-950 bg-opacity-90 w-full flex flex-col justify-center items-center h-full py-10" data-aos="slide-up">
         <p className="text-white text-4xl" data-aos="slide-right"><CountUpAnimated end={3000} id="rentedVehicle" /><span className="text-yellow-200">+</span></p>

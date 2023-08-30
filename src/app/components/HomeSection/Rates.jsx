@@ -26,7 +26,7 @@ const Rates = () => {
     <section className='max-w-7xl mx-auto  my-32'>
         <h2 className='text-5xl font-semibold text-sky-900 text-center'>Our Rental Plans</h2>
         <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto w-24 mt-3 border-dashed mb-16"/>
-     <div className='grid md:grid-cols-3 grid-cols-1 w-full mx-auto place-items-center gap-4 '>{rates.map((plan) => (
+     <div className='grid lg:grid-cols-3 grid-cols-1 w-full mx-auto place-items-center lg:gap-4 gap-6 '>{rates.map((plan) => (
         <div key={plan.name} className='border-[2px] border-sky-900 p-6 w-4/5' data-aos="slide-up">
             <h2 className='text-sky-600 font-semibold text-2xl text-center mb-4 mt-2' data-aos="slide-up">{plan.name}</h2>
           {plan.vehicles.map((vehicle) => (
