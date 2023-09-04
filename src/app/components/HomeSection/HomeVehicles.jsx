@@ -76,15 +76,15 @@ const HomeVehicles = () => {
       {vehicles.map((vehicle, index) => (
       <SwiperSlide  key={index}>
          
-<div   className="max-w-md  bg-gray-100 h-[450px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 " data-aos="zoom-in"
-style={{backgroundImage: `url(${"/wave-haikei.svg"})`}}>
+<div   className="max-w-md  h-[450px] w-full border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-8 transform transition-transform hover:-translate-y-6  duration-300 hover:border-blue-800 hover:border-b-8" data-aos="zoom-in"
+style={{backgroundImage: `url(${"/wave-haikei.svg"})`,backgroundColor: "transparent"}}>
 
      <h5 className=" float-right mb-2 text-2xl font-bold tracking-tight text-yellow-200 p-3 dark:text-white" data-aos="slide-up">{vehicle.name}</h5>
         
   
         <Image className="rounded-t-lg " src={vehicle.image} width={275} height={250} alt={vehicle.name}/>
     
-    <div className=" flex flex-col  mx-3 px-4 pb-2 shadow-xl rounded-md h-[35%]" data-aos="slide-up">
+    <div className=" flex flex-col  mx-3 px-4 pb-2 shadow-xl rounded-md h-[35%] " data-aos="slide-up">
         
         <p className="mt-7 z-10 mb-3 text-lg font-semibold text-yellow-400 dark:text-gray-400 capitalize">{vehicle.price}/<subscript className="text-sm font-light">Day</subscript></p>
         <a href="#" className="z-10 inline-flex w-[30%] items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

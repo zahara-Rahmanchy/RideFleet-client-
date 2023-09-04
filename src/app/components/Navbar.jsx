@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/Vehicles"
                   className="text-white dark:text-white hover:underline"
                 >
                   Vehicles
@@ -55,7 +55,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/Types"
                   className="text-white dark:text-white hover:underline"
                 >
                   Types
@@ -63,12 +63,29 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/Services"
                   className="text-white dark:text-white hover:underline"
                 >
-                  Features
+                  Services
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/Booking"
+                  className="text-white dark:text-white hover:underline"
+                >
+                  Booking
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/About"
+                  className="text-white dark:text-white hover:underline"
+                >
+                  About Us
+                </Link>
+              </li>
+
             </ul>
           </div>
         </div>
