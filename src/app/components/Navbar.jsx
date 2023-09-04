@@ -24,7 +24,7 @@ const Navbar = () => {
               (555) 412-1234
             </a>
             <Link
-              href="#"
+              href="/Login"
               className="text-sm  text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
             >
               Login
@@ -43,6 +43,15 @@ const Navbar = () => {
                   aria-current="page"
                 >
                   Home
+                </Link>
+              </li>
+            
+              <li>
+                <Link
+                  href="/About"
+                  className="text-white dark:text-white hover:underline"
+                >
+                  About Us
                 </Link>
               </li>
               <li>
@@ -66,9 +75,10 @@ const Navbar = () => {
                   href="/Services"
                   className="text-white dark:text-white hover:underline"
                 >
-                  Services
+                 Drivers
                 </Link>
               </li>
+             
               <li>
                 <Link
                   href="/Booking"
@@ -77,14 +87,7 @@ const Navbar = () => {
                   Booking
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/About"
-                  className="text-white dark:text-white hover:underline"
-                >
-                  About Us
-                </Link>
-              </li>
+             
 
             </ul>
           </div>
