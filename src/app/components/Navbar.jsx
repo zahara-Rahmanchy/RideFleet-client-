@@ -29,6 +29,12 @@ const Navbar = () => {
             >
               Login
             </Link>
+            <Link
+              href="/SignUp"
+              className="ms-6 text-sm  text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
+            >
+              Sign Up
+            </Link>
           </div>
         </div>
       </nav>
