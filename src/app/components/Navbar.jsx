@@ -29,12 +29,12 @@ const Navbar = () => {
             >
               Login
             </Link>
-            <Link
+            {/* <Link
               href="/SignUp"
               className="ms-6 text-sm  text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
             >
               Sign Up
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
@@ -45,7 +45,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="#"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                   aria-current="page"
                 >
                   Home
@@ -55,7 +55,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/About"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                   About Us
                 </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Vehicles"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                   Vehicles
                 </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Types"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                   Types
                 </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Services"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                  Drivers
                 </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/Booking"
-                  className="text-white dark:text-white hover:underline"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                   Booking
                 </Link>
