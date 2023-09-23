@@ -1,10 +1,14 @@
-// "use client";
+"use client";
+import {useSession} from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import UserProfile from "./UserProfile/UserProfile";
 // import favicon from "../../app/favicon.png";
 
 const Navbar = () => {
+  // const {data:session} = useSession()
+  // console.log("sesssion: " ,session)
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -16,6 +20,7 @@ const Navbar = () => {
               Fleet
             </span>
           </a>
+          {/* {session?"signed in":"not signed"} */}
           <div className="flex items-center">
             <a
               href="tel:5541251234"
@@ -25,23 +30,21 @@ const Navbar = () => {
             </a>
             <Link
               href="/Login"
-              className="text-sm  text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
+              className="text-sm me-5 text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
             >
               Login
             </Link>
-            {/* <Link
-              href="/SignUp"
-              className="ms-6 text-sm  text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
-            >
-              Sign Up
-            </Link> */}
+            <UserProfile />
           </div>
         </div>
       </nav>
       <nav className=" bg-gray-800 dark:bg-gray-700">
-        <div className="max-w-screen-xl px-4 py-3 mx-auto">
-          <div className="flex items-center">
-            <ul className="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+        <div className="max-w-screen-xl px-1 md:py-3 md:px-4 py-5 md:mx-auto">
+          <div
+            className="  max-w-screen-xl  md:mx-auto justify-between  z-10 w-full "
+            id="navbar-cta"
+          >
+            <ul className="flex flex-row font-medium mt-0 md:mr-6 md:space-x-8 space-x-5 text-xs flex-wrap ">
               <li>
                 <Link
                   href="#"
@@ -51,13 +54,13 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-            
+
               <li>
                 <Link
                   href="/About"
                   className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
-                  About Us
+                  About
                 </Link>
               </li>
               <li>
@@ -81,20 +84,18 @@ const Navbar = () => {
                   href="/Services"
                   className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
-                 Drivers
+                  Drivers
                 </Link>
               </li>
-             
+
               <li>
                 <Link
                   href="/Booking"
-                  className="text-white dark:text-white hover:underline text-xs md:text-base"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base "
                 >
                   Booking
                 </Link>
               </li>
-             
-
             </ul>
           </div>
         </div>

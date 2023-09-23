@@ -19,7 +19,7 @@ const Banner = () => {
 
 
   <div className="md:col-span-1  col-span-2    w-full order-2 md:order-1"  >
-  <div className="absolute z-1 md:w-1/2 w-full clip  bg-sky-950 bg-opacity-90 md:h-[500px] h-[150px]" >
+  <div className="absolute z-1 md:w-1/2 w-full clip  bg-[#073865] bg-opacity-95 md:h-[500px] h-[150px]" >
      </div>
   <div className="relative z-10 top-4/5 lg:left-1/3 md:left-4/5 md:w-[660px] w-[350px] ">
   <Swiper
