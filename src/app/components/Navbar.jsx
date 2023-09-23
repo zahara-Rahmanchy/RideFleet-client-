@@ -3,11 +3,12 @@ import {useSession} from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import UserProfile from "./UserProfile/UserProfile";
+import UserProfile from "../UserProfile/UserProfile";
+import UserInfo from "./UserInfo";
 // import favicon from "../../app/favicon.png";
 
 const Navbar = () => {
-  // const {data:session} = useSession()
+  const {data: session} = useSession();
   // console.log("sesssion: " ,session)
   return (
     <header>
@@ -34,7 +35,8 @@ const Navbar = () => {
             >
               Login
             </Link>
-            <UserProfile />
+
+            <UserInfo />
           </div>
         </div>
       </nav>

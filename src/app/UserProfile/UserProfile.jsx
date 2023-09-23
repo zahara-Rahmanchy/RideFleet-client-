@@ -1,3 +1,5 @@
+"use client";
+import {signOut} from "next-auth/react";
 import React from "react";
 import {FaUserCheck} from "react-icons/fa";
 
@@ -17,7 +19,11 @@ const UserProfile = () => {
       <div
         id="dropdownHover"
         className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-      ></div>
+      >
+        {session?.user?.name}
+        {session?.user?.email}
+        <button onClick={() => signOut()}>Logout</button>
+      </div>
     </>
   );
 };
