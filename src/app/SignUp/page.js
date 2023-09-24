@@ -2,7 +2,7 @@
 import {Player} from "@lottiefiles/react-lottie-player";
 import axios from "axios";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import {FaCar} from "react-icons/fa";
 
@@ -17,7 +17,7 @@ const SignUpPage = () => {
   //   to check pass
 
   const password = watch("password");
-
+  const [error, setError] = useState();
   const onSubmit = async data => {
     // const name = data.name;
     // const email = data.email;
@@ -36,6 +36,11 @@ const SignUpPage = () => {
         console.log("Response data:", responseData);
         alert("Registered Successfully!");
         reset();
+      }
+      if (response.error) {
+        console.log("error");
+        setError(response.error);
+        return;
       }
     } catch (error) {
       console.log(error);
@@ -182,6 +187,9 @@ const SignUpPage = () => {
             >
               Sign Up
             </button>
+            {error && (
+              <span className="text-rose-500 text-sm m-1">{error}</span>
+            )}
           </form>
           <label className="text-sm flex-none mb-6">
             Don&apos;t have an account? Please{" "}

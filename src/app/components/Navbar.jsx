@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <div className="flex flex-wrap flex-row justify-between bg-slate-100 items-center   p-4">
           <a href="https://flowbite.com" className="flex items-center">
             <span className="flex text-gray-600 flex-row justify-end items-end self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Ride
@@ -22,21 +22,23 @@ const Navbar = () => {
             </span>
           </a>
           {/* {session?"signed in":"not signed"} */}
-          <div className="flex items-center">
+          <div className="flex flex-row md:justify-around justify-end items-center md:space-x-2  space-x-4 w-52 ">
             <a
               href="tel:5541251234"
-              className="mr-6 text-sm  text-gray-500 dark:text-white hover:underline hover:text-red-600"
+              className=" text-sm  text-gray-500 dark:text-white hover:underline hover:text-red-600"
             >
               (555) 412-1234
             </a>
-            <Link
-              href="/Login"
-              className="text-sm me-5 text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
-            >
-              Login
-            </Link>
-
-            <UserInfo />
+            {session?.user ? (
+              <UserInfo />
+            ) : (
+              <Link
+                href="/Login"
+                className="text-md md:me-5 text-blue-600 dark:text-blue-500  hover:text-red-600 hover:underline"
+              >
+                Login
+              </Link>
+            )}
           </div>
         </div>
       </nav>
