@@ -51,7 +51,7 @@ const authOptions = {
           const userExits = await User.findOne({email});
           if (!userExits) {
             const response = await axios.post(
-              "http://localhost:3000/api/SignUp",
+              "https://ride-fleet-client-l6a9.vercel.app/api/SignUp",
               {
                 name: user.name,
                 email: user.email,

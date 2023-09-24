@@ -75,14 +75,14 @@ const Navbar = () => {
                   Vehicles
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/Types"
                   className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
                   Types
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/Services"

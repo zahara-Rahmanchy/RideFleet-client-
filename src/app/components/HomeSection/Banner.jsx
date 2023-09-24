@@ -45,26 +45,29 @@ const Banner = () => {
             </Swiper>
           </div>
         </div>
-        <div className="flex flex-col md:ms-10 justify-center md:bg-transparent bg-sky-950 bg-opacity-90 md:order-2 order-1 z-5   md:mb-10 md:col-span-1  col-span-2 place-items-start  md:ps-20 ps-10  pe-0 me-0">
+        <div className="flex flex-col md:ms-10 justify-center md:bg-transparent bg-[#073865] bg-opacity-90 md:order-2 order-1 z-5   md:mb-10 md:col-span-1  col-span-2 place-items-start  md:ps-20 ps-10  pe-0 me-0">
           <h1
-            className="md:text-5xl  text-4xl z-10 md:text-sky-950 text-yellow-200 font-bold pb-3 md:ms-6 mt-5 text-wrap"
+            className="md:text-5xl  text-4xl z-10 md:text-sky-900 text-sky-500 font-bold pb-3 md:ms-6 mt-5 text-wrap"
             data-aos="zoom-in"
+            style={{
+              textShadow: "3px 3px 2px rgba(0, 0, 0, 0.2)",
+            }}
           >
             Ready to Hit <br />
             the Road?
           </h1>
           <h2
-            className="md:text-2xl   text-xl z-10 md:text-yellow-400 text-white  italic font-medium  md:ms-6 text-wrap "
+            className="md:text-2xl   text-xl z-10 md:text-yellow-400 text-yellow-100 italic font-medium  md:ms-6 text-wrap "
             data-aos="zoom-in"
             style={{
-              textShadow: "3px 3px 2px rgba(253, 224, 71, 0.8)", // Add your desired text shadow properties here
+              textShadow: "3px 3px 2px rgba(253, 224, 71, 0.2)",
             }}
           >
             {" "}
             Hire Your Perfect Ride with Us Today!
           </h2>
           <button
-            className=" md:ms-6   my-4 btn btn-md bg-blue-800 text-white font-medium border-black-700 border-2 w-24 rounded-lg p-2 flex-none"
+            className=" md:ms-6   my-4 btn btn-md md:bg-blue-800 bg-yellow-300 text-white font-medium border-black-700 border-2 w-24 rounded-lg p-2 flex-none"
             data-aos="zoom-in"
           >
             Hire Now

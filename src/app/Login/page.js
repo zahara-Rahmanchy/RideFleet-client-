@@ -49,7 +49,9 @@ const LoginPage = () => {
 
   // google signin
   const handleGoogleSignIn = () => {
-    signIn("google", {callbackUrl: "http://localhost:3000"});
+    signIn("google", {
+      callbackUrl: "https://ride-fleet-client-l6a9.vercel.app/",
+    });
     alert("Welcome to RideFleet!");
   };
   return (
