@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="flex flex-wrap flex-row justify-between bg-slate-100 items-center   p-4">
+        <div className="flex flex-wrap flex-row justify-between  items-center   p-4">
           <a href="https://flowbite.com" className="flex items-center">
             <span className="flex text-gray-600 flex-row justify-end items-end self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Ride
@@ -51,7 +51,7 @@ const Navbar = () => {
             <ul className="flex flex-row font-medium mt-0 md:mr-6 md:space-x-8 space-x-5 text-xs flex-wrap ">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="text-white dark:text-white hover:underline text-xs md:text-base"
                   aria-current="page"
                 >

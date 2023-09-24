@@ -1,0 +1,183 @@
+[
+  {
+    "category": "Car",
+    "brand": "Mercedes-Benz",
+    "model": "S-Class",
+    "description": "Experience luxury and style with the Mercedes S-Class. 4 Passengers, 3 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "2500 BDT",
+      "perWeek": "12000 BDT",
+      "perMonth": "45000 BDT"
+    },
+    "image": "/marcedes-s-class.png"
+  },
+  {
+    "category": "Car",
+    "brand": "Ford",
+    "model": "Explorer",
+    "description": "A spacious and comfortable SUV for family trips. 5 Passengers, 4 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1800 BDT",
+      "perWeek": "9000 BDT",
+      "perMonth": "32000 BDT"
+    },
+    "image": "/ford.png"
+  },
+  {
+    "category": "Car",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "description": "Mauris semper nisl a massa convallis. 3 Passengers, 2 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1500 BDT",
+      "perWeek": "7000 BDT",
+      "perMonth": "25000 BDT"
+    },
+    "image": "/corolla.png"
+  },
+
+  {
+    "category": "Car",
+    "brand": "Honda",
+    "model": "Civic",
+    "description": "A fuel-efficient and compact car. 5 Passengers, 2 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1200 BDT",
+      "perWeek": "5500 BDT",
+      "perMonth": "20000 BDT"
+    }
+  },
+  {
+    "category": "Car",
+    "brand": "Nissan",
+    "model": "Altima",
+    "description": "Efficient and comfortable sedan for daily commutes. 4 Passengers, 2 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1400 BDT",
+      "perWeek": "6500 BDT",
+      "perMonth": "23000 BDT"
+    },
+    "image": "/nissan.png"
+  },
+  {
+    "category": "Car",
+    "brand": "Chevrolet",
+    "model": "Suburban",
+    "description": "A large and powerful SUV for group travel. 7 Passengers, 5 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "2200 BDT",
+      "perWeek": "10500 BDT",
+      "perMonth": "38000 BDT"
+    }
+  },
+  {
+    "category": "Car",
+    "brand": "BMW",
+    "model": "7 Series",
+    "description": "Experience opulence with the BMW 7 Series. 4 Passengers, 3 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "2600 BDT",
+      "perWeek": "12500 BDT",
+      "perMonth": "48000 BDT"
+    }
+  },
+  {
+    "category": "Car",
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "description": "A compact and fun-to-drive hatchback. 5 Passengers, 2 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1100 BDT",
+      "perWeek": "5200 BDT",
+      "perMonth": "19000 BDT"
+    }
+  },
+  {
+    "category": "Car",
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "description": "Efficient and reliable sedan for daily drives. 4 Passengers, 2 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "1300 BDT",
+      "perWeek": "6000 BDT",
+      "perMonth": "22000 BDT"
+    }
+  },
+  {
+    "category": "Car",
+    "brand": "Jeep",
+    "model": "Grand Cherokee",
+    "description": "A rugged and versatile SUV for outdoor adventures. 5 Passengers, 4 Luggages, Gas, Auto, 4 Doors.",
+    "rent": {
+      "perDay": "2000 BDT",
+      "perWeek": "9500 BDT",
+      "perMonth": "35000 BDT"
+    }
+  },
+  {
+    "category": "Bicycle",
+    "brand": "Schwinn",
+    "model": "Cruiser",
+    "description": "Classic cruiser bicycle for leisure rides. Comfortable saddle, retro design.",
+    "rent": {
+      "perDay": "120 BDT",
+      "perWeek": "600 BDT",
+      "perMonth": "1800 BDT"
+    }
+  },
+  {
+    "category": "Bicycle",
+    "brand": "Raleigh",
+    "model": "Mountain",
+    "description": "Mountain bike for off-road adventures. Front suspension, rugged tires.",
+    "rent": {
+      "perDay": "140 BDT",
+      "perWeek": "700 BDT",
+      "perMonth": "2200 BDT"
+    }
+  },
+  {
+    "category": "Bicycle",
+    "brand": "Giant",
+    "model": "Road",
+    "description": "Lightweight road bike for fast-paced rides. Drop handlebars, smooth tires.",
+    "rent": {
+      "perDay": "130 BDT",
+      "perWeek": "650 BDT",
+      "perMonth": "2000 BDT"
+    }
+  },
+  {
+    "category": "Bicycle",
+    "brand": "Trek",
+    "model": "Hybrid",
+    "description": "Versatile hybrid bicycle for city and trail riding. Upright riding position, all-terrain tires.",
+    "rent": {
+      "perDay": "125 BDT",
+      "perWeek": "625 BDT",
+      "perMonth": "1950 BDT"
+    }
+  },
+  {
+    "category": "Bicycle",
+    "brand": "Cannondale",
+    "model": "Urban",
+    "description": "Urban commuter bike with sleek design. Fenders, built-in lights.",
+    "rent": {
+      "perDay": "135 BDT",
+      "perWeek": "675 BDT",
+      "perMonth": "2100 BDT"
+    }
+  },
+  {
+    "category": "Bike",
+    "brand": "Honda",
+    "model": "CBR600RR",
+    "description": "Sportbike with a powerful engine. Ideal for thrill-seekers. 2 Passengers.",
+    "rent": {
+      "perDay": "135 BDT",
+      "perWeek": "675 BDT",
+      "perMonth": "2100 BDT"
+    }
+  }
+]
