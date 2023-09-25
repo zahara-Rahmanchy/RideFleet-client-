@@ -61,14 +61,6 @@ const Navbar = () => {
 
               <li>
                 <Link
-                  href="/About"
-                  className="text-white dark:text-white hover:underline text-xs md:text-base"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/Vehicles"
                   className="text-white dark:text-white hover:underline text-xs md:text-base"
                 >
@@ -83,14 +75,6 @@ const Navbar = () => {
                   Types
                 </Link>
               </li> */}
-              <li>
-                <Link
-                  href="/Services"
-                  className="text-white dark:text-white hover:underline text-xs md:text-base"
-                >
-                  Drivers
-                </Link>
-              </li>
 
               <li>
                 <Link
@@ -98,6 +82,22 @@ const Navbar = () => {
                   className="text-white dark:text-white hover:underline text-xs md:text-base "
                 >
                   Booking
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/About"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/Services"
+                  className="text-white dark:text-white hover:underline text-xs md:text-base"
+                >
+                  Drivers
                 </Link>
               </li>
             </ul>
