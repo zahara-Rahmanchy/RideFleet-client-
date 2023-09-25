@@ -45,7 +45,8 @@
       "perDay": "1200 BDT",
       "perWeek": "5500 BDT",
       "perMonth": "20000 BDT"
-    }
+    },
+    "image": "/honda.png"
   },
   {
     "category": "Car",

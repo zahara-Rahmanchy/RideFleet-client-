@@ -111,7 +111,7 @@ const Vehicles = () => {
                 width={300}
                 height={400}
                 alt={"car"}
-                className="  z-20 scale-125 hover:scale-150"
+                className="  z-20 scale-125 hover:scale-150 "
               />
             </div>
           </article>
