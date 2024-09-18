@@ -7,7 +7,7 @@ const FAQ = () => {
     initFlowbite();
   }, []);
   return (
-    <>
+    <div className=" mt-48">
       <h2 className="text-4xl text-sky-900 font-bold mt-48 max-w-4xl  mx-auto  mb-10 capitalize">
         Frequently Asked Questions
       </h2>
@@ -221,7 +221,7 @@ const FAQ = () => {
           transform="translate(100 105)"
         />
       </svg> */}
-    </>
+    </div>
   );
 };
 

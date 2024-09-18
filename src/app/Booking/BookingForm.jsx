@@ -18,7 +18,7 @@ const BookingForm = () => {
         <div className="bg-sky-900 bg-opacity-30 h-[400px] z-20 "></div>
       </Parallax>
 
-      <div className="flex justify-center items-center mb-10">
+      <div className="flex justify-center items-center mb-28">
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const BookingForm = () => {
           />
         </svg>
         <form
-          className=" shadow md:w-[90%] w-full mb-32 bg-sky-950 bg-opacity-80  border-b-4 rounded-lg border-sky-800 mx-auto absolute bottom-0 z-30  p-5"
+          className=" shadow md:w-[90%] w-full mb-40 bg-sky-950 bg-opacity-80  border-b-4 rounded-lg border-sky-800 mx-auto absolute -bottom-[15%]  z-30  p-5"
           data-aos="fade-up"
         >
           <fieldset className="flex md:flex-row flex-col justify-between space-x-8">

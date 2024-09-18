@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import React, {useState} from "react";
-import {useForm} from "react-hook-form";
+import {FieldValues, useForm} from "react-hook-form";
 import {Parallax} from "react-parallax";
 import {FcGoogle} from "react-icons/fc";
 const LoginPage = () => {
@@ -17,12 +17,12 @@ const LoginPage = () => {
     formState: {errors},
   } = useForm();
   //   to check pass
-  const [error, setError] = useState();
+  const [error, setError] = useState<string | undefined>();
   const router = useRouter();
   const password = watch("password");
 
   // credentials signin
-  const onSubmit = async data => {
+  const onSubmit = async (data: FieldValues) => {
     console.log("input", data);
 
     try {
@@ -32,12 +32,12 @@ const LoginPage = () => {
         redirect: false,
       });
       console.log(response);
-      if (response.error) {
+      if (response?.error) {
         setError("Invalid email or password!. Please check again");
         return;
       }
 
-      if (response.ok) {
+      if (response?.ok) {
         alert("Logged In");
         reset();
         router.replace("/");
@@ -47,12 +47,12 @@ const LoginPage = () => {
     }
   };
 
-  // google signin
+  // google signin https://ride-fleet-client-l6a9.vercel.app
   const handleGoogleSignIn = () => {
     signIn("google", {
-      callbackUrl: "https://ride-fleet-client-l6a9.vercel.app/",
+      callbackUrl: "http://localhost:3000",
     });
-    alert("Welcome to RideFleet!");
+    // alert("Welcome to RideFleet!");
   };
   return (
     <div className="bg-gray-100 h-screen w-full ">
@@ -92,14 +92,13 @@ const LoginPage = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 {...register("email", {required: "Email is required"})}
               />
               {errors.email && (
                 <span className="text-rose-500 text-xs m-1">
-                  {errors.email.message}
+                  {errors.email.message as string}
                 </span>
               )}
             </div>
@@ -113,13 +112,12 @@ const LoginPage = () => {
               <input
                 type="password"
                 id="password"
-                name="password"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 {...register("password", {required: "Password is required"})}
               />
               {errors.email && (
                 <span className="text-rose-500 text-xs m-1">
-                  {errors.email.message}
+                  {errors.email.message as string}
                 </span>
               )}
             </div>
