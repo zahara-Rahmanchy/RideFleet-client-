@@ -40,7 +40,7 @@ const VehiclesPage = async ({
   return (
     <>
       {" "}
-      <section className="container  grid  lg:grid-cols-4 grid-cols-1 max-w-screen-xl mx-auto  place-items-center gap-5">
+      <section className="container  grid  lg:grid-cols-4 grid-cols-1 max-w-screen-xl mx-auto  lg:gap-5 ">
         <VehiclesFilterSideBar />
         <Vehicles requests={result.data} error={error} />
       </section>
