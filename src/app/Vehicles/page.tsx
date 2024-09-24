@@ -4,7 +4,12 @@ import VehiclesFilterSideBar from "@/components/Vehicles/VehiclesFilterSideBar";
 const VehiclesPage = async ({
   searchParams,
 }: {
-  searchParams: {searchTerm?: string};
+  searchParams: {
+    searchTerm?: string;
+    sortBy?: string;
+    sortOrder?: string;
+    rentalPlan?: string;
+  };
 }) => {
   const url = process.env.NEXT_PUBLIC_BACKEND_API_URL;
   const query = new URLSearchParams(searchParams);
@@ -16,7 +21,7 @@ const VehiclesPage = async ({
     "searchParams: ",
     searchParams,
     "url: ",
-    `${url}/vehicles/${queries}`
+    `${url}/vehicles${queries}`
   );
   const res = await fetch(`${url}/vehicles?${queries}`, {
     method: "GET",
@@ -28,11 +33,12 @@ const VehiclesPage = async ({
     cache: "no-store",
   });
   const result = await res.json();
-  console.log("result: ", result);
+  // console.log("result: ", result);
   let requestsData;
   let error;
   if (result?.success === true) {
     requestsData = result.data;
+    console.log("data: ", requestsData);
   }
   if (result.success === false) {
     error = result.message;
