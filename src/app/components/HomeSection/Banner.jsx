@@ -28,7 +28,7 @@ const Banner = () => {
             <Swiper
               slidesPerView={1}
               loop
-              effect="flip"
+              // effect="slide-right"
               autoplay
               modules={[EffectFade, Autoplay]}
               onSwiper={swiper => console.log(swiper)}

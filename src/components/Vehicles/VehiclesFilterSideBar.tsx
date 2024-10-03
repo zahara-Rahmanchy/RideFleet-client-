@@ -13,7 +13,7 @@ import {ToolIcon, SearchIcon} from "../SVGs/Search";
 import {updateQueryParams} from "@/utils/UpdateRouteQuery";
 interface IQueryParams {
   searchTerm: string;
-  rentalPlan: string;
+  category: string;
   sortBy: string;
   sortOrder: string;
 }
@@ -21,7 +21,7 @@ const VehiclesFilterSideBar = () => {
   const router = useRouter();
   const [queryParams, setQueryParams] = useState<IQueryParams>({
     searchTerm: "",
-    rentalPlan: "",
+    category: "",
     sortBy: "",
     sortOrder: "",
   });
@@ -100,11 +100,11 @@ const VehiclesFilterSideBar = () => {
 
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     const isChecked = event.target.checked;
-    const rentalName = isChecked === true ? event.target.value : "";
-    console.log("isChecked", isChecked, "rentalName: ", rentalName);
+    const fleetType = isChecked === true ? event.target.value : "";
+    console.log("isChecked", isChecked, "rentalName: ", fleetType);
     setQueryParams(prevParams => ({
       ...prevParams,
-      rentalPlan: rentalName,
+      category: fleetType,
     }));
 
     // updateQueryParams();
@@ -200,11 +200,11 @@ const VehiclesFilterSideBar = () => {
                     onClick={e => e.preventDefault()}
                     className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white group"
                   >
-                    <div className="flex items-center  h-2 w-52">
+                    <div className="flex items-center  h-2 w-[13rem]">
                       <label
                         id="day-states-button"
                         data-dropdown-toggle="day-dropdown-states"
-                        className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-sky-900 border border-sky-300 rounded-s-lg  e  dark:bg-gray-700  dark:text-white dark:border-gray-600"
+                        className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-5 text-xs font-medium text-center text-white bg-sky-900 border border-sky-300 rounded-s-lg  e  dark:bg-gray-700  dark:text-white dark:border-gray-600"
                         // type="button"
                       >
                         Daily
@@ -310,7 +310,7 @@ const VehiclesFilterSideBar = () => {
               >
                 <Box />
                 <span className="flex-1 ms-3 whitespace-nowrap">
-                  Rental Plans
+                  Fleet Types
                 </span>
               </a>
               <ul className="ms-6">
@@ -324,8 +324,8 @@ const VehiclesFilterSideBar = () => {
                       <input
                         id="Standard-checkbox"
                         type="checkbox"
-                        value="Standard"
-                        checked={queryParams.rentalPlan === "Standard"} // Bin
+                        value="Car"
+                        checked={queryParams.category === "Car"} // Bin
                         onChange={handleCheckboxChange}
                         className="w-5 h-5 text-sky-900 bg-gray-50 border-2 border-sky-900 rounded focus:ring-sky-300 hover:border-sky-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
@@ -333,7 +333,7 @@ const VehiclesFilterSideBar = () => {
                         htmlFor="Standard-checkbox"
                         className="ms-2 text-md font-medium text-sky-900 dark:text-gray-300"
                       >
-                        Standard
+                        Cars
                       </label>
                     </div>
                   </a>
@@ -348,8 +348,8 @@ const VehiclesFilterSideBar = () => {
                       <input
                         id="Student-checkbox"
                         type="checkbox"
-                        value="Student"
-                        checked={queryParams.rentalPlan === "Student"} // Bin
+                        value="Bike"
+                        checked={queryParams.category === "Bike"} // Bin
                         onChange={handleCheckboxChange}
                         className="w-5 h-5 text-sky-900 bg-gray-50 border-2 border-sky-900 rounded focus:ring-sky-300 hover:border-sky-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
@@ -357,7 +357,7 @@ const VehiclesFilterSideBar = () => {
                         htmlFor="Student-checkbox"
                         className="ms-2 text-md font-medium text-sky-900 dark:text-gray-300"
                       >
-                        Student
+                        Bikes
                       </label>
                     </div>{" "}
                   </a>
@@ -372,8 +372,8 @@ const VehiclesFilterSideBar = () => {
                       <input
                         id="Premium-checkbox"
                         type="checkbox"
-                        value="Premium"
-                        checked={queryParams.rentalPlan === "Premium"} // Bin
+                        value="Van"
+                        checked={queryParams.category === "Van"} // Bin
                         onChange={handleCheckboxChange}
                         className="w-5 h-5 text-sky-900 bg-gray-50 border-2 border-sky-900 rounded focus:ring-sky-300 hover:border-sky-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
@@ -381,7 +381,7 @@ const VehiclesFilterSideBar = () => {
                         htmlFor="Premium-checkbox"
                         className="ms-2 text-md font-medium text-sky-900 dark:text-gray-300"
                       >
-                        Premium
+                        Vans
                       </label>
                     </div>{" "}
                   </a>

@@ -6,10 +6,14 @@
   transition: all 0.5s ease-in-out, visibility 0s linear 0.3s;
 }
 
-.max-w38 {
-  width: 350px;
-  hyphens: auto;
-  word-break: break-word; /* allow words to be broken to fit the width */
-  white-space: pre-line; /* maintain white spaces */
-  overflow-wrap: break-word;
+@layer components {
+  @screen lg {
+    .max-w38 {
+      width: 350px;
+      hyphens: auto;
+      word-break: break-word; /* allow words to be broken to fit the width */
+      white-space: pre-line; /* maintain white spaces */
+      overflow-wrap: break-word;
+    }
+  }
 }
