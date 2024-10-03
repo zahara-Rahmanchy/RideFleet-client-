@@ -11,15 +11,15 @@ export const formatData = (str: string) => {
       if (index % 2 === 0) {
         const category = item.trim(); // Category like "Airbags:"
         const value = splitFeatures[index + 1]?.trim(); // Corresponding value
-
+        const formattedValue = value
+          ? value.replace(/,$|$/, ".")
+          : category + ".";
         return (
           <li key={index} className="m-w38">
             <span className="font-medium text-blue-800">
               {category.includes(":") ? category : "Others:"}
             </span>{" "}
-            <span className="text-base text-gray-900">
-              {value !== undefined ? value : category}
-            </span>
+            <span className="text-base text-gray-900">{formattedValue}</span>
           </li>
         );
       }
