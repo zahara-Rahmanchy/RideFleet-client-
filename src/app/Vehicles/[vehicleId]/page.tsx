@@ -8,7 +8,7 @@ import {join} from "path";
 import Prices from "@/components/Vehicles/Prices";
 import Title from "@/app/UtilComponents/Title";
 import {formatData} from "@/utils/fomatData";
-import YellowCloud from "@/components/SVGs/YellowCloud";
+
 // import Aos from "aos";
 // import "aos/dist/aos.css";
 interface IVehicleId {
@@ -55,7 +55,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase lg:text-left text-center">
                 performance
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:ms-[1px] w-24 border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:ms-[1px] w-[8.5rem] border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
@@ -69,7 +69,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase lg:text-left text-center">
                 dimensions
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:ms-[1px] w-24 border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:ms-[1px] w-28 border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
@@ -84,7 +84,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase lg:text-left text-center">
                 fuel Economy
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:mx-[1px] w-24 border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 mx-auto lg:mx-[1px] w-[8.75rem] border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
@@ -111,7 +111,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase text-center lg:text-left">
                 Interior
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:mx-[1px] mx-auto w-[3.5rem] border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:mx-[1px] mx-auto w-[5rem] border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
@@ -126,7 +126,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase text-center lg:text-left">
                 safety
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:m-[1px] mx-auto w-[3.5rem] border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:m-[1px] mx-auto w-[4rem] border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
@@ -141,7 +141,7 @@ const page = async ({params}: IVehicleId) => {
               <h2 className="text-lg font-semibold text-sky-900 uppercase text-center lg:text-left">
                 additional Features
               </h2>
-              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:mx-[1px] mx-auto w-24 border-dashed" />
+              <hr className="text-center text-5xl  border-yellow-400 border-2 lg:mx-[1px] mx-auto w-52 border-dashed" />
 
               <ul
                 className=" ms-5 list-disc text-base text-blue-800 lg:max-w38 mt-4 "
