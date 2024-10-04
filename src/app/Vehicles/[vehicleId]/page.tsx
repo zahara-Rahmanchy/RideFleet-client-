@@ -98,13 +98,15 @@ const page = async ({params}: IVehicleId) => {
               {result.data.description}
             </h3> */}
           </div>
-          <Image
-            src={result.data.image}
-            width={500}
-            height={400}
-            alt={"car"}
-            className="z-20 lg:scale-150 md:scale-125 lg:mb-30 mb-10  mx-auto image lg:order-2 order-1 "
-          />
+          <div className="z-20 perspective-[1000px] lg:mb-30 mb-10 w-full mx-auto image lg:order-2 order-1">
+            <Image
+              src={result.data.image}
+              width={500}
+              height={400}
+              alt={"car"}
+              className="lg:animate-scaleUp md:scale-125 mx-auto"
+            />
+          </div>
           {/* right info div */}
           <div className=" right-0 lg:ms-8 mx-auto p-4 mt-9 lg:mt-auto  w-full lg:w-[calc(100% - 800px)]] flex flex-col lg:items-start items-center space-y-16  h-full  order-3">
             <div className="shadow-lg bg-[#eef4fb] p-5 lg:w-auto w-full">
