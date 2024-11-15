@@ -104,7 +104,7 @@ const page = async ({params}: IVehicleId) => {
               width={500}
               height={400}
               alt={"car"}
-              className="lg:animate-scaleUp md:scale-125 mx-auto"
+              className="lg:animate-scaleUp scale-100 md:scale-125  mx-auto"
             />
           </div>
           {/* right info div */}

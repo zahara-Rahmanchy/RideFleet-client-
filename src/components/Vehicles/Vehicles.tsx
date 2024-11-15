@@ -60,9 +60,9 @@ const Vehicles = ({requests, error}: VehiclesProps) => {
         fill="#EAF3FE"
       />
 
-      <section className="md:grid md:grid-cols-2 grid-cols-1 lg:ps-0 mx-4 lg:col-span-3 my-20  place-items-center place-content-center">
+      <section className="md:grid md:grid-cols-2  grid-cols-1 lg:ps-0 mx-4 lg:col-span-3 mb-20 mt-10 lg:my-20  place-items-center place-content-center">
         <div className="md:col-span-2">
-          <h1 className="text-3xl font-semibold text-sky-900">
+          <h1 className="md:text-3xl mx-3 lg:mx-auto text-2xl font-semibold text-sky-900">
             Choose Your Ideal Ride!
           </h1>
           <p className=" font-light text-slate-500 text-sm   my-5">

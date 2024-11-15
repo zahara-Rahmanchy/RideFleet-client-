@@ -4,10 +4,14 @@ import React, {ChangeEvent, FormEvent, useEffect, useState} from "react";
 import {Box} from "../SVGs/Box";
 import {
   FaAngleDown,
+  FaHamburger,
   FaSort,
   FaSortNumericDownAlt,
   FaSortNumericUpAlt,
 } from "react-icons/fa";
+import {IoFilterSharp} from "react-icons/io5";
+import {ImFilter} from "react-icons/im";
+import {GiHamburgerMenu} from "react-icons/gi";
 import {BiReset} from "react-icons/bi";
 import {ToolIcon, SearchIcon} from "../SVGs/Search";
 import {updateQueryParams} from "@/utils/UpdateRouteQuery";
@@ -52,7 +56,7 @@ const VehiclesFilterSideBar = () => {
     const value = event.target.value;
     // console.log("value: ", value, "key: ", key);
     // Update local state
-    if (value === "") {
+    if (value !== "") {
       setQueryParams(prevParams => ({
         ...prevParams,
         searchTerm: value,
@@ -116,42 +120,30 @@ const VehiclesFilterSideBar = () => {
   }, [queryParams]);
 
   return (
-    <div className="lg:col-span-1 col-span-4  px-5  w-full h-full pt-16 border-r-2 border-r-sky-50 mt-2">
-      {/* <button
-        data-drawer-target="cta-button-sidebar"
-        data-drawer-toggle="cta-button-sidebar"
-        aria-controls="cta-button-sidebar"
-        type="button"
+    <div className="lg:col-span-1 w-full h-full md:text-left text-center pt-16 border-r-2 border-r-sky-50 mt-2">
+      <button
+        className="lg:hidden block  text-sky-900 px-3  w-[90%] mx-auto rounded-md"
         onClick={() => setToggle(!toggle)}
-        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
-        <span className="sr-only">Open sidebar</span>
-        <svg
-          className="w-6 h-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            fill-rule="evenodd"
-            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
-          ></path>
-        </svg>
-      </button> */}
+        <span className="flex justify-between items-center p-2 bg-[#eaf3ff] rounded-md shadow-md  ">
+          <span className="flex items-center gap-x-3 text-2xl font-semibold ">
+            <ImFilter className=" text-4xl  rounded-md p-1 " /> Filters
+          </span>
+          <IoFilterSharp className="text-sky-900 text-2xl " />
+        </span>
+      </button>
       <aside
         id="cta-button-sidebar"
-        className={`lg:static lg:block z-40 w-64 h-full ${
-          toggle === true ? "md:block" : "md:hidden"
+        className={`lg:static lg:block z-40  h-full ${
+          toggle === true ? "block" : "hidden"
         }`}
         aria-label="Sidebar"
       >
-        <div className="h-full  overflow-y-auto  dark:bg-gray-800 w-full">
-          <ul className="space-y-2 font-medium ">
-            <li className="my-6">
+        <div className="h-full overflow-x-hidden w-[90%]  mx-auto px-3 ">
+          <ul className="space-y-2 font-medium">
+            <li className="my-6 text-left">
               <form
-                className="flex items-center max-w-sm mx-auto"
+                className="flex items-center max-w-sm mx-auto text-left"
                 onSubmit={handleSubmit("searchTerm")}
               >
                 <label htmlFor="simple-search" className="sr-only">
@@ -181,19 +173,19 @@ const VehiclesFilterSideBar = () => {
               </form>
             </li>
 
-            <li className="border-[#eaf3fe] border-bottom-8 rounded-md my-6">
+            <li className="border-[#eaf3fe] border-bottom-8 rounded-md my-6 w-full">
               <a
                 href="#"
                 onClick={e => e.preventDefault()}
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white  dark:hover:bg-gray-700 group"
               >
                 <FaSort className=" text-3xl text-sky-900 bg-gray-100 px-1 " />
-                <span className="flex-1 ms-3 whitespace-nowrap text-gray-700 font-medium">
+                <span className="text-left flex-1 ms-3 whitespace-nowrap text-gray-700 font-medium">
                   Sort By Price
-                  <FaAngleDown className="lg:hidden sm:block text-sky-900" />
+                  {/* <FaAngleDown className="lg:hidden sm:block text-sky-900" /> */}
                 </span>
               </a>
-              <ul className="ms-6 py-2 gap-9">
+              <ul className="ms-6 py-2 gap-9 w-full">
                 <li className="border-[#eaf3fe] border-bottom-8 rounded-md py-2 my-2">
                   <a
                     href="#"
@@ -309,7 +301,7 @@ const VehiclesFilterSideBar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <Box />
-                <span className="flex-1 ms-3 whitespace-nowrap">
+                <span className="flex-1 ms-3 whitespace-nowrap text-left">
                   Fleet Types
                 </span>
               </a>

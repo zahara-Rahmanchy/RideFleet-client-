@@ -31,7 +31,7 @@ module.exports = {
         },
       },
       animation: {
-        scaleUp: "scaleUp 2s ease-in forwards", // Define the animation with duration
+        scaleUp: "scaleUp 2s ease-in forwards", // the animation with duration
       },
     },
   },

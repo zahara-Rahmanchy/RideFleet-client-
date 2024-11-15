@@ -45,10 +45,10 @@ const Navbar = () => {
       <nav className=" bg-gray-800 dark:bg-gray-700">
         <div className="max-w-screen-xl px-1 md:py-3 md:px-4 py-5 md:mx-auto">
           <div
-            className="  max-w-screen-xl  md:mx-auto justify-between  z-10 w-full "
+            className="max-w-screen-xl   md:mx-auto  z-10 w-full "
             id="navbar-cta"
           >
-            <ul className="flex flex-row font-medium mt-0 md:mr-6 md:space-x-8 space-x-5 text-xs flex-wrap ">
+            <ul className="flex flex-row md:justify-start justify-center font-medium mt-0 md:mr-6 md:space-x-8 space-x-5 text-xs flex-wrap ">
               <li>
                 <Link
                   href="/"
