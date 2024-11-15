@@ -1,7 +1,17 @@
 import Title from "@/app/UtilComponents/Title";
 import React from "react";
+interface Rates {
+  perDay: number;
+  perWeek: number;
+  perMonth: number;
+}
 
-const Prices = ({rates, category}) => {
+interface PricesProps {
+  rates: Rates;
+  category: string;
+}
+
+const Prices: React.FC<PricesProps> = ({rates, category}) => {
   return (
     <section className="max-w-7xl mx-auto mb-32">
       <Title title="Our Rental Plans" />
